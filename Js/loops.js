@@ -45,5 +45,27 @@ let atbulas = '';
  for ( let i=0; i<teksto_ilgis; i++ ) {
      atbulas = atbulas + tekstas [i];
  }
- console.log(`tekstas "${tekstas}" atbulai yra "${atbulai}".`);
+ console.log(`tekstas "${tekstas}" atbulai yra "${atbulas}".`);
+ 
+
+console.log( '--------------------');
+// 11. dalyba be  liekanos 
+
+
+ const from = 0;
+ const till = 111154;
+ const divider = 3;
+ let count = 0;
+
+ for  ( let i=from; i<=till; i++) {
+    if (i % divider === 0 ) {
+        count++;
+    }
+ }
+
+
+ const answer = `Skaiciu intervale tarp ${from} ir ${till} besidalinanciu be
+ liekanos is ${divider} yra ${count} vienetai.`;
+
+ console.log(answer);
  
